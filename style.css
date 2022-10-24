@@ -1,0 +1,116 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.container{
+    height: 100vh;
+}
+.background{
+    background-color: rgba(0, 100, 0, 0.922);
+    height: 25vh;
+}
+.information-section{
+    position: fixed;
+    width: 85vw;
+    left: 2.5vw;
+    border: 3px solid black;
+    top: 2.5vh;
+    height: 96.5vh;
+    background-color: white;
+    z-index: 1;
+    margin: 20px;
+}
+.contact-section{
+    width: 30vw;
+    display: inline-block;
+    height: 96.5vh;
+    border-right: 2px solid black;
+}
+.chatting-section{
+    width: 65vw;
+    display: inline-block;
+    height: 96.5vh;
+    position: absolute;
+}
+.top-bar{
+    height: 60px;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid black;
+    gap: 25px;
+}
+input{
+    width: 300px;
+    border-radius: 10px;
+    background-color: azure;
+    height: 35px;
+    text-align: center;
+}
+img{
+    /* border: 2px solid black; */
+    margin: 10px;
+}
+.center-initial-image{
+    width: 450px;
+    height: 400px;
+    /* border: 2px solid black; */
+    position: relative;
+    top: 30vh;
+    left: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#options{
+    position: fixed;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin-left: 30vh;
+     display: none;
+     flex-direction: column;
+     justify-content: space-around;
+     z-index: 1;
+     background-color: beige;
+     align-items: center;
+}
+
+@keyframes increasewidth {
+    from{
+        width: 0vw;
+    }to{
+        width: 30vw;
+    }
+}
+@keyframes decreasewidth {
+    from{
+        width: 30vw;
+    }to{
+        width: 0vw;
+    }
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+.contact-info{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-number{
+    height: 55px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    text-align: start;
+}
