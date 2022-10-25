@@ -94,7 +94,7 @@ img{
     from{
         width: 30vw;
     }to{
-        width: 0vw;
+        width: 1px;
     }
 }
 .contact{
@@ -113,4 +113,25 @@ img{
     width: 100%;
     border-bottom: 1px solid black;
     text-align: start;
+}
+.contact-intro{
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 55vw;
+    border-bottom: 2px solid black;
+}
+#options-chat-screen{
+    position: fixed;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    top: 130px;
+    right: 200px;
+    z-index: 1;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: azure;
 }

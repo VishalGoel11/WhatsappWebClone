@@ -13,8 +13,14 @@
     <div class="container">
         <div class="background"></div>
         <div class="information-section">
+            <div id="options-chat-screen">
+                <div id="new" style="cursor: pointer;">New Group</div>
+                <div>Stareed Message</div>
+                <div>Setting</div>
+                <div>Log Out</div>
+            </div>
             <div class="contact-section">
-                <div id="newgroup" style="height: 100vh;width: 2px;background-color: white; position: fixed;">
+                <div class="kamchor" id="newgroup" style="height: 100vh;width: 2px;background-color: white; position: fixed; border-right: 2px solid black; display: none;">
                     <div style="height: 150px;background-color: rgba(49, 251, 49, 0.845);border-bottom: 2px solid black; display: flex;align-items: flex-end;"
                         id="element1">
                         <img src="backwordarrow.png" alt="" width="60px" style="display: none;" id="back"
@@ -41,21 +47,31 @@
                     <img src="3lines.png" width="35px" height="35px">
                 </div>
                 <div class="contact" id="contat">
-                    <div class="contact-info">
+                    <div class="contact-info" >
                         <img src="contact-image.jpg" width="50px" height="50px" style="border-radius: 50%;">
-                        <div class="contact-number"><h2 style="margin-top: 1px;">Swayam</h2>
+                        <div class="contact-number" onclick="chatting(this.id)" id="heading1"><h2 style="margin-top: 1px;">Swayam</h2>
                         </div>
                     </div>
                     <div class="contact-info">
                         <img src="contact-image.jpg" width="50px" height="50px" style="border-radius: 50%;">
-                        <div class="contact-number"><h2 style="margin-top: 1px;">Himanshu Vig</h2>
+                        <div class="contact-number"  id="heading3" onclick="chatting(this.id)"><h2 style="margin-top: 1px;">Himanshu Vig</h2>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="chatting-section">
+                <div class="contact-intro" style="justify-content: space-between; display: none;" id="chatting-top-bar">
+                <div class="contact-intro">
+                    <img src="contact-image.jpg" width="50px" height="50px" style="border-radius: 50%;">
+                    <div class="contact-number1" id="heading20"></div>
+                </div>
+                <div style="display: flex; gap: 8px; ">
+                    <img src="3dot.png" width="30px" height="30px"style="cursor: pointer;" onclick="chatoptionsdot()">
+                    <img src="search-bar.png" width="25px" height="30px" style="cursor: pointer;">
+                </div>
+            </div>
                 <div class="center-initial-image">
-                    <img src="whatsapp-initial.jpg" alt="" width="90%" height="40%">
+                    <img src="whatsapp-initial.jpg" alt="" width="90%" height="40%" style="border-radius: 50%;">
                     <div class="heading">
                         <h1>Whatsapp Web</h1>
                     </div>
@@ -63,6 +79,15 @@
                         <p>Send and receive messages without keeping your phone online.<br>Use Whatsapp on up to 4
                             linked devices and 1 phone at a same time.</p>
                     </div>
+                </div>
+                <div style="display: none;position: fixed; bottom: 4px; width: 55vw;border-top: 2px solid black;height:50px;
+                border-bottom: 2px solid black;height:50px;justify-content: space-between; align-items: center;" id="chatting-bottom-bar">
+                <div>
+                    <img src="smile-emoji.png" width="30px" height="30px"style="cursor: pointer;display: inline;">
+                    <img src="document.png" width="30px" height="30px"style="cursor: pointer;display: inline">
+                </div>
+                    <input type="text" style="display: inline;" width="55vw" placeholder="Type your Message">
+                    <img src="mic.png" width="30px" height="30px"style="cursor: pointer;">
                 </div>
             </div>
         </div>
