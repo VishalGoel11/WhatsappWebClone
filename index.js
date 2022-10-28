@@ -16,7 +16,7 @@ var number=()=>{
    let str='<div class="contact-info"><img src="contact-image.jpg" width="50px" height="50px" style="border-radius: 50%;"><div class="contact-number" onclick="chatting(this.id)" id="heading'+d+'"><h2 style="margin-top: 1px;">'+name+'</h2> </div></div>';
    var elementcreated= document.createElement("div");
    elementcreated.innerHTML=str;
-   if(name!=null){
+   if(name!=null && name!=""){
    contact.append(elementcreated);
    }
    d++;
@@ -39,11 +39,11 @@ var chatoptionsdot=()=>{
 var b=1;
 var c=true;
 // var newgroup=document.getElementById("new");
-var newgroup= function(){
+var newgroup= function(text){
     let new1=document.getElementsByClassName("kamchor")[0];
     let opt= document.getElementById("options");
     let back= document.getElementById("back");
-    // let increase=document.getElementById("element1");
+    let increase=document.getElementById("header1");
     new1.style.display="block";
     let idname="ele"+b;
     new1.id=idname;
@@ -52,14 +52,28 @@ var newgroup= function(){
     new2.style.animation="increasewidth 1s 1";
     opt.style.display="none";
     back.style.display="block";
-    new1.style.width="30vw";
+    new1.style.width="30px";
+    increase.innerHTML="<h1>"+document.getElementById(text).innerText+"</h1>";
+    console.log(increase.innerHTML);
     a=1;
     b++;
+    if(text=="new"){
+        let element=document.createElement("div");
+        element.innerHTML="<input type='text' width='80%' height='60px' placeholder='ENTER THE NAME OF THE GROUP'/>";
+        element.style.marginTop="10px";
+        element.style.display="flex";
+        element.style.justifyContent="center";
+        new1.appendChild(element);
+    }
+
 }
 var backMove=function(){
     let new3=document.getElementsByClassName("kamchor")[0];
     new3=document.getElementById(new3.id);
     let back= document.getElementById("back");
+    let increase=document.getElementById("header1");
+    increase.innerHTML="";
+    // console.log(increase.)
     // new1.style.animation="decreasewidth 1s 1";
     // console.log(new3);
     // new3.style.display="block";

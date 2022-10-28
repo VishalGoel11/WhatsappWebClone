@@ -45,10 +45,10 @@ body{
     align-items: center;
     height: 50px;
     border-bottom: 2px solid black;
-    gap: 25px;
+    gap: 0px;
 }
 input{
-    width: 300px;
+    width: 150px;
     border-radius: 10px;
     background-color: azure;
     height: 35px;
