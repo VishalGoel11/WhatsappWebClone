@@ -13,7 +13,7 @@ var d=5;
 var number=()=>{
    let name= prompt("Enter name of the Friend");
    let contact= document.getElementById("contat");
-   let str='<div class="contact-info"><img src="contact-image.jpg" width="50px" height="50px" style="border-radius: 50%;"><div class="contact-number" onclick="chatting(this.id)" id="heading'+d+'"><h2 style="margin-top: 1px;">'+name+'</h2> </div></div>';
+   let str='<div class="contact-info"><img src="contact-image.jpg" width="50px" height="50px" style="border-radius: 50%;"><div class="contact-number" id="heading'+d+'"onclick="chatting(this.id)" ><h2 style="margin-top: 1px;">'+name+'</h2> </div></div>';
    var elementcreated= document.createElement("div");
    elementcreated.innerHTML=str;
    if(name!=null && name!=""){
@@ -53,6 +53,7 @@ var newgroup= function(text){
     opt.style.display="none";
     back.style.display="block";
     new1.style.width="30px";
+    new2.style.width="30vw";
     increase.innerHTML="<h1>"+document.getElementById(text).innerText+"</h1>";
     console.log(increase.innerHTML);
     a=1;

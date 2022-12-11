@@ -4,6 +4,7 @@ body{
 }
 .container{
     height: 100vh;
+    /* display: ; */
 }
 .background{
     background-color: rgba(0, 100, 0, 0.922);
@@ -134,4 +135,21 @@ img{
     justify-content: space-evenly;
     align-items: center;
     background-color: azure;
+}
+.loadpage{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: aliceblue;
+    flex-direction: column;
+    row-gap: 16px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+#iconwhatsapp{
+    width: 100px;
 }
